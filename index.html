@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>12쉽소 이력서 출력</title>
+    <style>
+        @import url(12style.css);
+    </style>
+</head>
+<body>
+    <div class="top"> 
+        <p class="logo">12쉽소</p> 
+        <table class="topTable">
+            <tr>
+                <td class="leftColumn"> 
+                    <p class="topHighlightText" style="font-size:20px">{Title}</p> 
+                    <p class="topHighlightText" style="font-size:72px">{Name}</p> 
+                </td>
+                <td class="rightColumn"> 
+                    <img src="SampleImage.jpeg" style="width:120px; height:160px">
+                </td>
+            </tr>
+        </table>
+    </div> 
+
+    <div class="infoBox">
+        <div class="infoTitleContainer">
+            <span class="infoTitle">인적사항</span>
+            <div class="infoLine"></div>
+        </div>
+        <br>
+        <table class="infoTable">
+            <tr>
+                <td class="infoLeft"> 
+                    <div class="roundBox"><p class="infoText">생년월일</p></div>
+                </td>
+                <td class="infoRight"> 
+                    <p class="infoText">{birth}</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="infoLeft"> 
+                    <div class="roundBox"><p class="infoText">주소</p></div>
+                </td>
+                <td class="infoRight"  style="text-align:left; padding-left:12px;"> 
+                    <p class="infoText">{adress}</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="infoLeft"> 
+                    <div class="roundBox"><p class="infoText">연락처</p></div>
+                </td>
+                <td class="infoRight"> 
+                    <p class="infoText">{contact}</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="infoLeft"> 
+                    <div class="roundBox"><p class="infoText">이메일</p></div>
+                </td>
+                <td class="infoRight" style="text-align:left; padding-left:12px;"> 
+                    <p class="infoText">{email}</p>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <br>
+
+    <div class="infoBox">
+        <div class="infoTitleContainer">
+            <span class="infoTitle">저, 홍길동은</span>
+            <div class="infoLine"></div>
+        </div>
+        <br>
+        <table class="infoTable">
+            <tr class="infoCenter"> 
+                <td> <div class="roundBox"><p class="infoText">{Personality 1}</p></div> </td>
+            </tr>
+            <tr class="infoCenter"> 
+                <td> <div class="roundBox"><p class="infoText">{Personality 2}</p></div> </td>
+            </tr>
+            <tr class="infoCenter"> 
+                <td> <div class="roundBox"><p class="infoText">{Personality 3}</p></div> </td>
+            </tr>
+        </table>
+    </div>
+
+    <br>
+
+    <div class="infoBox">
+        <div class="infoTitleContainer">
+            <span class="infoTitle">최종학력사항</span>
+            <div class="infoLine"></div>
+        </div>
+        <br>
+        <table class="infoTable">
+            <tr>
+                <td class="infoLeft"> 
+                    <div class="roundBox"><p class="infoText">학교명</p></div>
+                </td>
+                <td class="infoRight"> 
+                    <p class="infoText">{schoolName}</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="infoLeft"> 
+                    <div class="roundBox"><p class="infoText">전공</p></div>
+                </td>
+                <td class="infoRight"> 
+                    <p class="infoText">{major}</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="infoLeft"> 
+                    <div class="roundBox"><p class="infoText">입학연도</p></div>
+                </td>
+                <td class="infoRight"> 
+                    <p class="infoText">{admissionYear}</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="infoLeft"> 
+                    <div class="roundBox"><p class="infoText">졸업연도</p></div>
+                </td>
+                <td class="infoRight"> 
+                    <p class="infoText">{graduateYear}</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="infoLeft"> 
+                    <div class="roundBox"><p class="infoText">학점</p></div>
+                </td>
+                <td class="infoRight"> 
+                    <p class="infoText"> {gradePoint} </p>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <br>
+
+    <div class="infoBox">
+        <div class="infoTitleContainer">
+            <span class="infoTitle">자격증</span>
+            <div class="infoLine"></div>
+        </div>
+        <br>
+        <table class="infoTable">
+            <tr>
+                <td class="infoLeft"> 
+                    <div class="roundBox"><p class="infoText">자격증명</p></div>
+                </td>
+                <td class="infoRight"> 
+                    <p class="infoText">{licenseName}</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="infoLeft"> 
+                    <div class="roundBox"><p class="infoText">취득연도</p></div>
+                </td>
+                <td class="infoRight"> 
+                    <p class="infoText">{date}</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="infoLeft"> 
+                    <div class="roundBox"><p class="infoText">인증기관</p></div>
+                </td>
+                <td class="infoRight"> 
+                    <p class="infoText">{agency}</p>
+                </td>
+            </tr>
+        </table>
+
+        <br>
+        <div class="infoLineSub"></div>
+        <br>
+
+        <table class="infoTable">
+            <tr>
+                <td class="infoLeft"> 
+                    <div class="roundBox"><p class="infoText">자격증명</p></div>
+                </td>
+                <td class="infoRight"> 
+                    <p class="infoText">{licenseName}</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="infoLeft"> 
+                    <div class="roundBox"><p class="infoText">취득연도</p></div>
+                </td>
+                <td class="infoRight"> 
+                    <p class="infoText">{date}</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="infoLeft"> 
+                    <div class="roundBox"><p class="infoText">인증기관</p></div>
+                </td>
+                <td class="infoRight"> 
+                    <p class="infoText">{agency}</p>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <br>
+
+    <div class="infoBox">
+        <div class="infoTitleContainer">
+            <span class="infoTitle">교육사항</span>
+            <div class="infoLine"></div>
+        </div>
+        <br>
+        <table class="infoTable">
+            <tr>
+                <td class="infoLeft"> 
+                    <div class="roundBox"><p class="infoText">교육명</p></div>
+                </td>
+                <td class="infoRight"> 
+                    <p class="infoText">{trainingName}</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="infoLeft"> 
+                    <div class="roundBox"><p class="infoText">교육연도</p></div>
+                </td>
+                <td class="infoRight"> 
+                    <p class="infoText">{date}</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="infoLeft"> 
+                    <div class="roundBox"><p class="infoText">교육기관</p></div>
+                </td>
+                <td class="infoRight"> 
+                    <p class="infoText">{agency}</p>
+                </td>
+            </tr>
+        </table>
+
+        <br>
+        <div class="infoLineSub"></div>
+        <br>
+
+        <table class="infoTable">
+            <tr>
+                <td class="infoLeft"> 
+                    <div class="roundBox"><p class="infoText">교육명</p></div>
+                </td>
+                <td class="infoRight"> 
+                    <p class="infoText">{trainingName}</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="infoLeft"> 
+                    <div class="roundBox"><p class="infoText">교육연도</p></div>
+                </td>
+                <td class="infoRight"> 
+                    <p class="infoText">{date}</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="infoLeft"> 
+                    <div class="roundBox"><p class="infoText">교육기관</p></div>
+                </td>
+                <td class="infoRight"> 
+                    <p class="infoText">{agency}</p>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <br>
+
+    <div class="infoBox">
+        <div class="infoTitleContainer">
+            <span class="infoTitle">경력사항</span>
+            <div class="infoLine"></div>
+        </div>
+        <br>
+        <p class="career"> <span class="roundBoxinText">{place}</span> <span class="roundBoxinText">{team}</span>에서 
+            <span class="roundBoxinText">{periodStart}</span>부터 <span class="roundBoxinText">{periodEnd}</span>까지 
+            <span class="roundBoxinText">{periodYears}</span>동안 <span class="roundBoxinText">{Task}</span> 업무를 맡았어요. </p>
+
+        <br>
+        <div class="infoLineSub"></div>
+        <br>
+
+        <p class="career"> <span class="roundBoxinText">{place}</span> <span class="roundBoxinText">{team}</span>에서 
+            <span class="roundBoxinText">{periodStart}</span>부터 <span class="roundBoxinText">{periodEnd}</span>까지 
+            <span class="roundBoxinText">{periodYears}</span>동안 <span class="roundBoxinText">{Task}</span> 업무를 맡았어요. </p>
+
+    </div>
+
+    <br>
+
+    <div class="infoBox">
+        <div class="infoTitleContainer">
+            <span class="infoTitle">자기소개</span>
+            <div class="infoLine"></div>
+        </div>
+        <br>
+        <p class="paragraph"> {introductionText}  </p>
+    </div>
+
+    <br>
+
+    <div class="infoBox"><div class="infoLine"></div></div>
+
+    <div class="infoBox" style="text-align:center;">
+        <p class="sloganEnd">1,2,3처럼 쉬운 이력서 생성 도우미,</p>&nbsp;<p class="logoEnd">12쉽소</p> 
+    </div>
+</body>
+</html>
