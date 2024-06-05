@@ -1,0 +1,187 @@
+/* 12style */
+
+        @font-face {
+            font-family: 'TTHakgyoansimKkwabaegiR';
+            src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2402_keris@1.0/TTHakgyoansimKkwabaegiR.woff2') format('woff2');
+            font-weight: normal;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'OAGothic-ExtraBold';
+            src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/OAGothic-ExtraBold.woff2') format('woff2');
+            font-weight: 800;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'OAGothic-Medium';
+            src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/OAGothic-Medium.woff2') format('woff2');
+            font-weight: 800;
+            font-style: normal;
+        }
+
+        * {
+            margin : 0px;
+            font-family : 'OAGothic-Medium';
+        }
+
+        .logo {
+            font-family: 'TTHakgyoansimKkwabaegiR';
+            position : absolute;
+            left : 32px;
+            top : 24px;
+            color : white;
+            margin : 0px;
+            font-size : 24px;
+        }
+
+        .logoEnd {
+            display: inline-block;
+            font-family: 'TTHakgyoansimKkwabaegiR';
+            color : #001ED6;
+            margin : 0px;
+            font-size : 20px;
+        }
+
+        .sloganEnd {
+            display: inline-block;
+            font-family: 'OAGothic-ExtraBold';
+            color : #001ED6;
+            margin : 0px;
+            font-size : 12px;    
+        }
+
+        div.top {
+            background : #001ED6;
+            height : 250px;
+            border : 0 none;
+            margin : 0;
+            padding : 0;
+            display : block;
+        }
+
+        body {
+            margin : 0;
+        }
+
+        table.topTable {
+            height : 240px;
+            width : 100%;
+            table-layout : fixed;
+        }
+
+
+        td.leftColumn {
+            width: 60%;
+            vertical-align: bottom;
+            text-align: center;
+            margin : 0px;
+        }
+
+        td.rightColumn {
+            width: 40%;
+            vertical-align: bottom;
+            text-align: center;
+            margin : 0px;
+        }
+
+        .topHighlightText {
+            font-family: 'OAGothic-ExtraBold';
+            color : white;
+            margin : 0px;
+        }
+
+        .infoBox {
+            background-color : white;
+            padding : 24px;
+        }
+
+        .infoTitleContainer {
+            display: flex;
+            align-items: center;
+        }
+        
+        .infoTitle {
+            font-family: 'OAGothic-ExtraBold';
+            color: black;
+            margin: 0;
+            font-size: 36px;
+        }
+        
+        .infoLine {
+            flex-grow: 1;
+            border-top: 2px solid black;
+            margin-left: 10px;
+        }
+
+        .infoLineSub {
+            flex-grow: 1;
+            border-top: 2px dotted #999999;
+            margin-left: 10px;
+        }
+
+        table.infoTable {
+            width : 100%;
+            table-layout : fixed;
+            border-collapse: separate;
+	        border-spacing: 0 8px;
+        }
+
+        td.infoLeft {
+            width: 35%;
+            vertical-align: middle;
+            text-align: center;
+            margin : 0px;
+        }
+
+        td.infoRight {
+            width: 60%;
+            vertical-align: middle;
+            text-align: center;
+            margin : 0px;
+        }
+
+        tr.infoCenter {
+            width: 100%;
+            vertical-align: middle;
+            text-align: center;
+            padding : 8px;
+        }
+
+        .roundBox {
+            border-radius : 30px;
+            border : 1.5px solid #999999;
+            padding-top : 8px;
+            padding-bottom : 8px;
+            width : 100%;
+            text-align: center;
+        }
+
+        .infoText {
+            font-size : 20px;
+        }
+
+        .career {
+            font-size : 20px;
+            line-height : 52px;
+        }
+
+        .paragraph {
+            font-size : 20px;
+            line-height : 28px;
+        }
+
+        .roundBoxinText {
+            border-radius : 30px;
+            border : 1.5px solid #999999;
+            padding-top : 8px;
+            padding-bottom : 8px;
+            padding-left : 20px;
+            padding-right : 20px;
+            margin-left : 4px;
+            margin-right : 4px;
+            text-align: center;
+            display : inline;
+            font-family : 'OAGothic-ExtraBold';
+            white-space: nowrap;
+        }
